@@ -38,9 +38,9 @@ export default function About() {
           <span className="text-indigo-400 text-sm font-semibold uppercase tracking-widest">Sobre mim</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-6">Quem sou eu</h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Sou um desenvolvedor apaixonado por transformar ideias em produtos digitais.
-            Tenho experiência com desenvolvimento frontend moderno e gosto de trabalhar
-            em projetos que fazem a diferença.
+            Sou um desenvolvedor Fullstack apaixonado por transformar ideias em produtos digitais.
+            Trabalho com .NET, Angular, React e Node.js, atuando tanto no backend quanto no frontend
+            para entregar soluções completas e de alta qualidade.
           </p>
         </motion.div>
 
@@ -71,14 +71,13 @@ export default function About() {
           <div>
             <h3 className="text-2xl font-bold mb-4">Minha jornada</h3>
             <p className="text-slate-400 leading-relaxed mb-4">
-              Comecei minha jornada no desenvolvimento web movido pela curiosidade de
-              entender como as coisas funcionam na internet. Desde então, venho
-              aperfeiçoando minhas habilidades e construindo projetos cada vez mais
-              complexos e impactantes.
+              Minha jornada no desenvolvimento começou pela curiosidade de entender como
+              sistemas funcionam de ponta a ponta. Hoje atuo como Fullstack, desenvolvendo
+              APIs robustas com .NET e Node.js e interfaces modernas com Angular e React.
             </p>
             <p className="text-slate-400 leading-relaxed">
               Acredito que bom software é aquele que resolve problemas reais com
-              simplicidade e elegância.
+              simplicidade, escalabilidade e elegância.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">

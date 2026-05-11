@@ -39,9 +39,9 @@ export default function Contact() {
             <h3 className="text-xl font-semibold mb-6">Informações</h3>
             <div className="space-y-4">
               {[
-                { icon: Mail, label: 'Email', value: 'brunokempe@email.com', href: 'mailto:brunokempe@email.com' },
+                { icon: Mail, label: 'Email', value: 'brunobkmacedo@gmail.com', href: 'mailto:brunobkmacedo@gmail.com' },
                 { icon: Github, label: 'GitHub', value: 'github.com/brunokempe', href: 'https://github.com/brunokempe' },
-                { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/brunokempe', href: '#' },
+                { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/brunokempe', href: 'https://www.linkedin.com/in/brunokempe' },
               ].map(({ icon: Icon, label, value, href }) => (
                 <a
                   key={label}
