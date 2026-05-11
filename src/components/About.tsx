@@ -1,23 +1,23 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { Code2, Layers, Rocket } from 'lucide-react'
+import { Code2, Network, Layers } from 'lucide-react'
 
 const cards = [
   {
     icon: Code2,
-    title: 'Clean Code',
-    desc: 'Escrevo código legível, escalável e bem estruturado seguindo as melhores práticas.',
+    title: 'Clean Code & Boas Práticas',
+    desc: 'Apaixonado por código limpo, desacoplado e testável. Aplico SOLID, DI e padrões de projeto no dia a dia.',
+  },
+  {
+    icon: Network,
+    title: 'Integração de Sistemas',
+    desc: 'Especialista em integrar ERPs, plataformas de pagamento, rastreamento e gestão de riscos via APIs e mensageria.',
   },
   {
     icon: Layers,
-    title: 'UI/UX Moderno',
-    desc: 'Foco em interfaces bonitas e experiências fluidas que encantam os usuários.',
-  },
-  {
-    icon: Rocket,
-    title: 'Performance',
-    desc: 'Otimização de performance e boas práticas de web vitals em todo projeto.',
+    title: 'Microsserviços & Backend',
+    desc: 'Arquitetura de microsserviços com .NET Core, RabbitMQ e Azure Service Bus para sistemas de alta resiliência.',
   },
 ]
 
@@ -38,9 +38,9 @@ export default function About() {
           <span className="text-indigo-400 text-sm font-semibold uppercase tracking-widest">Sobre mim</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-6">Quem sou eu</h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Sou um desenvolvedor Fullstack apaixonado por transformar ideias em produtos digitais.
-            Trabalho com .NET, Angular, React e Node.js, atuando tanto no backend quanto no frontend
-            para entregar soluções completas e de alta qualidade.
+            Desenvolvedor Fullstack Sênior com mais de 6 anos de experiência, especializado no ecossistema .NET
+            e com atuação sólida no frontend com Angular. Vivência no desenvolvimento de APIs RESTful,
+            integração de sistemas e modernização de aplicações ERP no setor de logística e transporte de cargas.
           </p>
         </motion.div>
 
@@ -71,20 +71,22 @@ export default function About() {
           <div>
             <h3 className="text-2xl font-bold mb-4">Minha jornada</h3>
             <p className="text-slate-400 leading-relaxed mb-4">
-              Minha jornada no desenvolvimento começou pela curiosidade de entender como
-              sistemas funcionam de ponta a ponta. Hoje atuo como Fullstack, desenvolvendo
-              APIs robustas com .NET e Node.js e interfaces modernas com Angular e React.
+              Iniciei minha carreira em 2019 como Desenvolvedor Júnior Delphi na New Century, onde ganhei
+              experiência sólida em sistemas ERP e bancos de dados relacionais. Em 2020 entrei na
+              <span className="text-indigo-300 font-medium"> Praxio</span>, onde atuo até hoje como Fullstack Sênior
+              no time de Operacional de Cargas.
             </p>
             <p className="text-slate-400 leading-relaxed">
-              Acredito que bom software é aquele que resolve problemas reais com
-              simplicidade, escalabilidade e elegância.
+              Na Praxio, desenvolvo e mantenho APIs e microsserviços críticos para o ERP de logística e transporte
+              de cargas, com integrações a plataformas de pagamento, rastreamento e gestão de riscos. Sou graduado
+              em Análise e Desenvolvimento de Sistemas pela UNIFEOB (2019) e tenho inglês avançado.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              { value: '10+', label: 'Projetos entregues' },
-              { value: '2+', label: 'Anos de experiência' },
-              { value: '100%', label: 'Dedicação' },
+              { value: '6+', label: 'Anos de experiência' },
+              { value: '2', label: 'Empresas' },
+              { value: 'Sênior', label: 'Nível' },
               { value: '∞', label: 'Vontade de aprender' },
             ].map(({ value, label }) => (
               <div key={label} className="p-4 rounded-xl bg-[#1a1a27] text-center">

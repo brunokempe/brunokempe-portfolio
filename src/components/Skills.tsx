@@ -3,16 +3,28 @@ import { motion, useInView } from 'framer-motion'
 
 const skillGroups = [
   {
+    category: 'Backend & Linguagens',
+    skills: ['C#', '.NET Core', '.NET Framework', 'ASP.NET MVC', 'APIs RESTful', 'Delphi', 'SQL'],
+  },
+  {
     category: 'Frontend',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'HTML & CSS'],
+    skills: ['Angular', 'TypeScript', 'HTML & CSS', 'React', 'RxJS'],
   },
   {
-    category: 'Backend',
-    skills: ['Node.js', 'Express', 'REST API', 'PostgreSQL', 'MongoDB'],
+    category: 'Banco de Dados & ORMs',
+    skills: ['Oracle', 'PostgreSQL', 'SQL Server', 'Firebird', 'NHibernate', 'Dapper', 'Entity Framework'],
   },
   {
-    category: 'Ferramentas',
-    skills: ['Git & GitHub', 'Vite', 'Docker', 'Figma', 'VS Code'],
+    category: 'Mensageria & Cloud',
+    skills: ['RabbitMQ', 'Azure Service Bus'],
+  },
+  {
+    category: 'Ferramentas & Práticas',
+    skills: ['Git & GitHub', 'Scrum', 'Clean Code', 'SOLID', 'Injeção de Dependência', 'OOP', 'Testes de Software', 'Microsserviços'],
+  },
+  {
+    category: 'Idiomas',
+    skills: ['Inglês Avançado'],
   },
 ]
 
@@ -33,17 +45,17 @@ export default function Skills() {
           <span className="text-indigo-400 text-sm font-semibold uppercase tracking-widest">Tecnologias</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-4">Minhas skills</h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            As tecnologias e ferramentas que utilizo no meu dia a dia para construir produtos incríveis.
+            Stack técnico construído ao longo de 6+ anos desenvolvendo sistemas críticos de logística e transporte.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillGroups.map(({ category, skills }, groupIndex) => (
             <motion.div
               key={category}
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.15 * groupIndex }}
+              transition={{ duration: 0.6, delay: 0.1 * groupIndex }}
               className="p-6 rounded-2xl bg-[#12121a] border border-white/5"
             >
               <h3 className="text-indigo-400 font-semibold text-sm uppercase tracking-wider mb-5">
@@ -55,7 +67,7 @@ export default function Skills() {
                     key={skill}
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={inView ? { opacity: 1, scale: 1 } : {}}
-                    transition={{ duration: 0.4, delay: 0.15 * groupIndex + 0.05 * i }}
+                    transition={{ duration: 0.4, delay: 0.1 * groupIndex + 0.05 * i }}
                     className="px-3 py-1.5 rounded-full bg-[#1a1a27] border border-white/8 text-slate-300 text-sm hover:border-indigo-500/40 hover:text-indigo-300 transition-all cursor-default"
                   >
                     {skill}

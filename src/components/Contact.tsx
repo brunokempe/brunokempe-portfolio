@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Mail, Github, Linkedin, Send } from 'lucide-react'
+import { Mail, Send } from 'lucide-react'
+import { GitHubIcon, LinkedInIcon } from '../icons'
 
 export default function Contact() {
   const ref = useRef(null)
@@ -40,8 +41,8 @@ export default function Contact() {
             <div className="space-y-4">
               {[
                 { icon: Mail, label: 'Email', value: 'brunobkmacedo@gmail.com', href: 'mailto:brunobkmacedo@gmail.com' },
-                { icon: Github, label: 'GitHub', value: 'github.com/brunokempe', href: 'https://github.com/brunokempe' },
-                { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/brunokempe', href: 'https://www.linkedin.com/in/brunokempe' },
+                { icon: GitHubIcon, label: 'GitHub', value: 'github.com/brunokempe', href: 'https://github.com/brunokempe' },
+                { icon: LinkedInIcon, label: 'LinkedIn', value: 'linkedin.com/in/brunokempe', href: 'https://www.linkedin.com/in/brunokempe' },
               ].map(({ icon: Icon, label, value, href }) => (
                 <a
                   key={label}

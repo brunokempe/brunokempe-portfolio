@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion'
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
+import { ArrowDown, Mail } from 'lucide-react'
+import { GitHubIcon, LinkedInIcon } from '../icons'
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.7, delay, ease: 'easeOut' },
+  transition: { duration: 0.7, delay, ease: 'easeOut' as const },
 })
 
 export default function Hero() {
@@ -46,8 +47,10 @@ export default function Hero() {
           {...fadeUp(0.35)}
           className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Desenvolvedor Fullstack com experiência em .NET, Angular, React e Node.js.
-          Apaixonado por criar soluções completas, modernas e de alto impacto.
+          Desenvolvedor Fullstack Sênior com +6 anos de experiência, especializado em{' '}
+          <span className="text-indigo-300">.NET e APIs RESTful</span> no setor de{' '}
+          <span className="text-indigo-300">logística e transporte de cargas</span>,
+          atuando também no frontend com Angular e React.
         </motion.p>
 
         <motion.div {...fadeUp(0.5)} className="flex flex-wrap items-center justify-center gap-4 mb-16">
@@ -67,9 +70,9 @@ export default function Hero() {
 
         <motion.div {...fadeUp(0.65)} className="flex items-center justify-center gap-5">
           {[
-            { icon: Github, href: 'https://github.com/brunokempe', label: 'GitHub' },
-            { icon: Linkedin, href: 'https://www.linkedin.com/in/brunokempe', label: 'LinkedIn' },
-            { icon: Mail, href: '#contato', label: 'Email' },
+            { icon: GitHubIcon, href: 'https://github.com/brunokempe', label: 'GitHub' },
+            { icon: LinkedInIcon, href: 'https://www.linkedin.com/in/brunokempe', label: 'LinkedIn' },
+            { icon: Mail, href: 'mailto:brunobkmacedo@gmail.com', label: 'Email' },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
